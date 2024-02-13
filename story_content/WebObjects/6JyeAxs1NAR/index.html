@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/konva@9.2.3/konva.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+      integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="utf-8" />
+    <title>Stage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="stage 1/theaterReciver/style.css" />
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="split left">
+        <!-- <h1>تكوين الشخصيات</h1> -->
+        <a href="creat/index.html" class="button">تكوين الشخصيات</a>
+      </div>
+      <div class="split right">
+        <!-- <h1>المسرح</h1> -->
+        <a href="stage 1/theaterReciver/index.html" class="button">المسرح</a>
+      </div>
+    </div>
+
+    <script>
+      // window.location.href="theaterReciver/index.html";
+      const left = document.querySelector(".left");
+const right = document.querySelector(".right");
+const container = document.querySelector(".container");
+
+left.addEventListener("mouseenter", () => {
+  container.classList.add("hover-left");
+});
+
+left.addEventListener("mouseleave", () => {
+  container.classList.remove("hover-left");
+});
+
+right.addEventListener("mouseenter", () => {
+  container.classList.add("hover-right");
+});
+
+right.addEventListener("mouseleave", () => {
+  container.classList.remove("hover-right");
+});
+
+    </script>
+  </body>
+</html>
